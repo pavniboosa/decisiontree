@@ -1,4 +1,4 @@
-[attribute,class,totalmat]=xlsread("Published/HW2-Synth-Data (1).xls")
+[attribute,class,totalmat]=xlsread("Published/HW2-Synth-Data.xls")
 a1=attribute(:,1:2)
 class
 c=totalmat(:,3)
