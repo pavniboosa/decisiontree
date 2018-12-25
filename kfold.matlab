@@ -1,3 +1,8 @@
+[attribute,class,totalmat]=xlsread("Published/HW2-Synth-Data (1).xls")
+a1=attribute(:,1:2)
+class
+c=totalmat(:,3)
+c1=cell2mat(c) 
 tree=fitctree(a1,c1)
 cv=crossval(tree,'Kfold',5)
 view(tree,'Mode','graph')
